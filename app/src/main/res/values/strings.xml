@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pinggg</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="profile_image">profile image</string>
+    <string name="i_m_new_user">I\'M New User.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hello">Hello</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign IN</string>
+    <string name="kindly_hold_on_lets_have_a_cup_of_coffee">Kindly hold on, Lets have a cup of coffee.</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered </string>
+    <string name="signin">Sign In?</string>
+    <string name="status">Status</string>
+    <string name="pinggg_chat">Pinggg Chat</string>
+    <string name="logout">Logout</string>
+
+</resources>

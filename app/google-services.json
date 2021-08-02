@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "770717538967",
+    "firebase_url": "https://pinggg-e4b30-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pinggg-e4b30",
+    "storage_bucket": "pinggg-e4b30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770717538967:android:28659a8ca933cbab5167d2",
+        "android_client_info": {
+          "package_name": "com.shrinetaadi.pinggg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770717538967-gs9bvdp9a7gbu6g9cqgg53fsuc1o17r4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrinetaadi.pinggg",
+            "certificate_hash": "d373356b2f460b99658283f62177933e4d414fcb"
+          }
+        },
+        {
+          "client_id": "770717538967-t40kka8otllnhtuj92kbckbr0rjrimaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-MfdEGnR9DPaxiu8E94lpAJUWWricRjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770717538967-t40kka8otllnhtuj92kbckbr0rjrimaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

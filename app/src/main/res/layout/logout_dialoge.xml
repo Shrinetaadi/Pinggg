@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog"
+    android:elevation="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/img"
+        android:src="@drawable/iconaa"
+      android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Are you sure you want to \n Log Out"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btndiaNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="#B8B8B8"
+            android:text="no" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btndiaYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="@color/primary"
+            android:text="yes" />
+    </LinearLayout>
+</LinearLayout>

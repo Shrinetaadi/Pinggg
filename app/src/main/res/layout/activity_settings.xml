@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ddbb"
+    tools:context=".activity.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/progressSLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:padding="20dp"
+        android:translationZ="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressSBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/nunitoblack"
+            android:gravity="center_horizontal"
+            android:text="@string/kindly_hold_on_lets_have_a_cup_of_coffee"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ProgressBar
+            android:id="@+id/progressSBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressdrawable"
+            android:progress="0" />
+
+        <ImageView
+            android:id="@+id/imgSgif"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/progressSBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/profile_image"
+            android:scaleType="centerCrop"
+            android:src="@raw/coffee" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSettingProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            app:civ_border_width="6dp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitoblack"
+                android:text="Name :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:translationZ="3dp" />
+
+            <EditText
+                android:id="@+id/etSettingsName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/nunitoblack"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/white"
+                android:textSize="45sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitoblack"
+                android:text="Status :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:translationZ="3dp" />
+
+            <EditText
+                android:id="@+id/etSettingStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/nunitoblack"
+                android:gravity="center"
+                android:text="Status"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_edittext"
+        android:backgroundTint="@color/primary"
+        android:elevation="7dp"
+        android:fontFamily="@font/nunitoblack"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

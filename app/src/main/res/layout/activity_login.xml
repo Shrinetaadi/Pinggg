@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/progressLLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:padding="20dp"
+        android:translationZ="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressLBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/nunitoblack"
+            android:gravity="center_horizontal"
+            android:text="@string/kindly_hold_on_lets_have_a_cup_of_coffee"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ProgressBar
+            android:id="@+id/progressLBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressdrawable"
+            android:progress="0" />
+
+        <ImageView
+            android:id="@+id/imgLgif"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/progressHBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/profile_image"
+            android:scaleType="centerCrop"
+            android:src="@raw/coffee" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitoblack"
+        android:gravity="center_horizontal"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="180sp"
+        android:background="@drawable/bg_login"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="70dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoblack"
+            android:gravity="center_horizontal"
+            android:text="@string/login"
+            android:textColor="@color/primary1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="Email"
+            android:background="@drawable/bg_edittext"
+            android:elevation="6dp"
+            android:fontFamily="@font/nunitoregular"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edittext"
+            android:elevation="6dp"
+            android:fontFamily="@font/nunitoregular"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_edittext"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/nunitobold"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/profile_image"
+        android:src="@drawable/profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="center"
+            android:text="@string/i_m_new_user"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
